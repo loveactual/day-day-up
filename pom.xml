@@ -21,14 +21,21 @@
 		<maven_deploy_plugin_version>2.7</maven_deploy_plugin_version>
 
 		<maven-surefire-plugin_version>2.17</maven-surefire-plugin_version>
+
+		<cglib_version>3.3.0</cglib_version>
 	</properties>
 	<!-- 版本管理 -->
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>${cglib_version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<distributionManagement>
-		<!--  -->
+		<!-- -->
 	</distributionManagement>
 	<repositories>
 		<repository>
@@ -45,7 +52,7 @@
 	</repositories>
 
 	<pluginRepositories>
-		<!--  -->
+		<!-- -->
 	</pluginRepositories>
 	<build>
 		<plugins>
@@ -155,5 +162,6 @@
 	</build>
 	<modules>
 		<module>design-principle</module>
+		<module>design-pattern</module>
 	</modules>
 </project>
